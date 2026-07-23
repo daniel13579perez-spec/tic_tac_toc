@@ -1,0 +1,51 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+html , body {
+    background-color: rgb(230, 188, 92);
+    background-image: url("Backgorund.png"); /* <-- שנה לשם קובץ התמונה שלך */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-image {
+    width: 400px;
+    max-width: 90%;
+    margin-bottom: 10px;
+    -webkit-mask-image: radial-gradient(circle, black 70%, transparent 100%);
+    mask-image: radial-gradient(circle, black 70%, transparent 100%);
+}
+
+.tictacteo{
+    background-color: lch(73.28% 75.54 106.02);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px 2px rgba(26, 14, 14, 0.4) ;
+}
+
+.tictacteo .btn{
+    font-size: 132px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(15, 15, 15);
+    background-color: rgb(73, 64, 64);
+    width: calc(33% - 6px);
+    height: calc(33% - 6px);
+    margin: 3px;
+    
+}
