@@ -23,8 +23,11 @@ function btnClick() {
         btns[obj.pos[0]].style.color = "yellow"
         btns[obj.pos[1]].style.color = "yellow"
         btns[obj.pos[2]].style.color = "yellow"
-        approvalBtn.
-        alert(this.textContent + " is win ")
+        setTimeout(() =>{
+          alert(this.textContent + " is win ")
+         rester() 
+        },100)
+       
     }
         else if (obj.isTie){
             setTimeout(() =>{
