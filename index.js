@@ -86,3 +86,5 @@ function checkWin(){
     }
     return obj
 }
+
+//const url = "git remote set-url origin https://ghp_kImdPnoovJ9Ok1tCm5xDErלמחוק 5K9dmdn44X8OJ9@github.com/daniel13579perez-spec/tic_tac_toc.git"
