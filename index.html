@@ -4,30 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tic tac toc</title>
-
     <link rel=" stylesheet" href="./index.css" />
 </head>
 <body>
-    
-    <img src="titel.png" alt="כותרת המשחק" class="title-image">
+    <img id="img_titel" src="titel.png" alt="כותרת המשחק" class="title-image">
 
-    <div class="tictacteo">
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
-    <div class="btn"></div>
+    <div id="board" class="tictacteo">
+        <div id="01" class="btn"></div>
+        <div id="02" class="btn"></div>
+        <div id="03" class="btn"></div>
+        <div id="04" class="btn"></div>
+        <div id="05" class="btn"></div>
+        <div id="06" class="btn"></div>
+        <div id="07" class="btn"></div>
+        <div id="08" class="btn"></div>
+        <div id="08" class="btn"></div>
     </div>
+    <br>
+    <br>
+    <input id="refresh_button" type="button" value="refresh" onClick="window.location.reload()" class="btn1">
 
-    <div class="Bar">
-        <div class="Approval"></div>
-    </div>
-
-    <script src="./index.js"></script>
-
+    <!-- רקע כהה שמכסה את כל המסך -->
+    <div id="popup-overlay" class="overlay">
+    <!-- תיבת ההודעה עצמה -->
+        <div id="popup-content" class="popup-content">
+            <h2 id="popup-message">מישהו ניצח!</h2>
+                <!-- זיקוק ראשון -->
+                <div id="fir_1" class="firework f1">
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                    <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                </div>
+            <!-- זיקוק שני -->
+            <div id="fir_2" class="firework f2">
+                <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+            </div>
+            <!-- זיקוק שלישי -->
+            <div id="fir_3" class="firework f3">
+                <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+                <div class="particle"></div><div class="particle"></div><div class="particle"></div><div class="particle"></div>
+            </div>
+            <button id="popup-button" onclick="window.location.reload()">שחק שוב</button> 
+        </div>
+    </div>  
+    <script id="kod" src="./index.js" ></script>
 </body>
 </html>
